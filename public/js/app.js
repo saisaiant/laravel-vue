@@ -2317,9 +2317,12 @@ __webpack_require__.r(__webpack_exports__);
       return fraction > 0 && fraction < 50;
     },
     fullStars: function fullStars() {
+      // > 4.5 = 5 star
+      // 4.3 = 4 and half
       return Math.round(this.value);
     },
     emptyStars: function emptyStars() {
+      // if rating would be 1.9 , ceil(1.9) = 2, 5 -2 = 3, render 3 empty stars 
       return 5 - Math.ceil(this.value);
     }
   } // created() {
@@ -55968,12 +55971,6 @@ var render = function() {
             attrs: { to: { name: "home" } }
           },
           [_vm._v("Laravel Vue")]
-        ),
-        _vm._v(" "),
-        _c(
-          "router-link",
-          { staticClass: "btn nav-button", attrs: { to: { name: "second" } } },
-          [_vm._v("Second")]
         )
       ],
       1
@@ -72306,8 +72303,8 @@ __webpack_require__.r(__webpack_exports__);
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! /home/kyloren/code/laravelVue/resources/js/app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! /home/kyloren/code/laravelVue/resources/sass/app.scss */"./resources/sass/app.scss");
+__webpack_require__(/*! /home/kyloren/code/laravel-vue/resources/js/app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! /home/kyloren/code/laravel-vue/resources/sass/app.scss */"./resources/sass/app.scss");
 
 
 /***/ })

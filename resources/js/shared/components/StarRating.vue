@@ -18,9 +18,12 @@ export default {
             return fraction > 0 && fraction < 50;
         },
         fullStars() {
+            // > 4.5 = 5 star
+            // 4.3 = 4 and half
             return Math.round(this.value);
         },
         emptyStars() {
+            // if rating would be 1.9 , ceil(1.9) = 2, 5 -2 = 3, render 3 empty stars 
             return 5 - Math.ceil(this.value);
         }
     },
