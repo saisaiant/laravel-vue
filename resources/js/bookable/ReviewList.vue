@@ -4,8 +4,7 @@
         <!-- <star-rating :rating="4.0"></star-rating>
         <star-rating :rating="4.4"></star-rating>
         <star-rating :rating="4.5"></star-rating>
-        <star-rating :rating="4.6"></star-rating>
-        <star-rating :rating="0.9"></star-rating>
+        <star-rating :rating="4.6"></star-rating>        
         <star-rating :rating="3.2"></star-rating>
         <star-rating :rating="3.5"></star-rating>
         <star-rating :rating="3.7"></star-rating> -->
