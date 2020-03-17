@@ -29,6 +29,7 @@ class Booking extends Model
         return static::where('review_key', $reviewKey)->with('bookable')->get()->first();
     }
 
+    // Events 
     protected static function boot() {
         parent::boot();
         static::creating(function ($booking) {
